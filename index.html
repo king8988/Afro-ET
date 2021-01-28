@@ -263,20 +263,45 @@ var currentScrollPos = window.pageYOffset;
                          -webkit-align-items: center;
                          align-items: center;
                        }
+
+                         
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.imgh{
+  cursor: pointer;
+}
+.imgh:hover{
+  animation: bounce 1s;
+}
+
                      </style>
                      <div class="container-fluid">
                   <div class="swiper-container swiper1">
                       <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/img4.jpg" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img5.jpg" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img6.jpg" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img20.jpg" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img21.png" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img22.jpg" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img23.jpeg" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img24.png" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img25.jpg" width="200px" alt=""></div>
-                        <div class="swiper-slide"><img src="img/img26.jpg" width="200px" alt=""></div>
+                        <div class="swiper-slide"><img src="img/img4.jpg" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img5.jpg" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img6.jpg" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img20.jpg" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img21.png" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img22.jpg" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img23.jpeg" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img24.png" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img25.jpg" width="200px" alt="" class="imgh"></div>
+                        <div class="swiper-slide"><img src="img/img26.jpg" width="200px" alt="" class="imgh"></div>
                       </div>
                       <!-- Add Pagination -->
                     </div>
